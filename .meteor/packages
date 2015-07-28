@@ -1,0 +1,50 @@
+# Meteor packages used by this project, one per line.
+# Check this file (and the other files in this directory) into your repository.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+#essentials
+meteor-platform
+
+#to be removed
+autopublish
+insecure
+
+#design
+raix:handlebar-helpers
+useraccounts:bootstrap
+fezvrasta:bootstrap-material-design
+
+#login
+accounts-password
+accounts-facebook
+accounts-google
+accounts-twitter
+
+#advanced
+ground:db
+raix:eventemitter
+less
+email
+http
+underscore
+reactive-dict
+
+#mobile
+fastclick
+#appcache
+meteorhacks:fast-render
+#meteorhacks:subs-manager
+
+#monitoring
+meteorhacks:kadira
+okgrow:analytics
+tail:core
+
+#debug
+kadira:debug
+nrswolf:observatory
+astronomerio:core
+msavin:mongol
+meteortoys:toykit
