@@ -31,10 +31,15 @@ http
 underscore
 reactive-dict
 
+#routing (flow-router or iron-router ? take care at the useraccounts deps)
+kadira:blaze-layout
+kadira:flow-router
+useraccounts:flow-routing
+
 #mobile
 fastclick
 #appcache
-meteorhacks:fast-render
+#meteorhacks:fast-render
 #meteorhacks:subs-manager
 
 #monitoring

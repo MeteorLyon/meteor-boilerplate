@@ -1,4 +1,9 @@
 {
+  "sitename": "meteor boilerplate",
+  "email": {
+    "from": "Meteor Boilerplate <meteor@boilerplate.io>",
+    "signature": "Meteor Boilerplate !"
+  },
   "config": {
     "collections": {
       "prefix": "app"

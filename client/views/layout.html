@@ -1,0 +1,18 @@
+<template name="MainLayout">
+    <header>
+        <h1>{{title}}</h1>
+    </header>
+    <nav>
+        {{> Template.dynamic template=nav}}
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row" style="margin: 0 auto;">
+            {{> Template.dynamic template=main}}
+        </div>
+    </div>
+
+    <footer>
+        {{> Template.dynamic template=footer}}
+    </footer>
+</template>
