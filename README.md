@@ -42,3 +42,25 @@ Test a package with :
     edit package.json and set config.testpackagename to "TheNameOfThePackageToTest"
     npm test
     open your browser to the required url (localhost:3000)
+    
+##Deployment
+For demos and beta : meteor deploy aName
+
+For production, passenger phusion, npm mup package or just meteor build command and do it your self.
+
+##Take care
+
+Follow security requirements : 
+
+* http://joshowens.me/the-curious-case-of-the-unknowing-leaky-meteor-security/
+* http://joshowens.me/meteor-security-101/ 
+* http://joshowens.me/meteor-security-201/
+* summary of 3 previous : https://meteorjs.club/MeteorSecurityChecklist.pdf?__s=ysuohrq1qzqkx56usqfm
+
+##TODO
+
+Use METEOR_SETTINGS env var instead of --settings aFile
+In production this is the way it works. But the fact is how to do it in an auto way ? for linux it's quite simple
+but for windows, in a batch file, it's harder for me. Any help is welcome !
+
+Improve the usage of Handlebars with let and each ... in ... : http://devblog.me/no-data-context.html
