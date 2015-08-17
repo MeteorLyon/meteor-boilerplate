@@ -16,4 +16,6 @@ if [ -z "$npm_package_config_testpackagename" ]; then (
     exit 1
 ) fi
 
-meteor test-packages $npm_package_config_testpackagename --settings $npm_package_config_testsettingsfile --port $PORT
+export METEOR_SETTINGS=$npm_package_config_testsettingsfile
+
+meteor test-packages $npm_package_config_testpackagename --port $PORT
