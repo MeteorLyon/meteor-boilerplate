@@ -1,0 +1,70 @@
+# Meteor packages used by this project, one per line.
+# Check this file (and the other files in this directory) into your repository.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+# standard package of meteor-platform in server app only
+application-configuration
+autoupdate
+base64
+binary-heap
+callback-hook
+check
+ddp
+deps
+ejson
+follower-livedata
+geojson-utils
+id-map
+json
+logging
+meteor
+mongo
+observe-sequence
+ordered-dict
+random
+retry
+routepolicy
+
+# standard package of meteor-platform in client app
+#blaze
+#blaze-tools
+#boilerplate-generator
+#html-tools
+#htmljs
+#jquery
+#minifiers
+#minimongo
+#reactive-var
+#spacebars
+#spacebars-compiler
+#templating
+#tracker
+#ui
+#webapp
+#webapp-hashing
+
+# specific app package
+underscore
+momentjs:moment
+rebolon:http-plugin-encoding
+rebolon:watcher-collections
+rebolon:watcher-common
+rebolon:watcher-providers
+rebolon:watcher-provider-leboncoin
+rebolon:worker-collections
+rebolon:worker-common
+
+# should be in packages only
+#cfs:standard-packages
+#cfs:gridfs
+
+#monitoring
+meteorhacks:kadira
+okgrow:analytics
+
+#debug
+kadira:debug
+nrswolf:observatory
+

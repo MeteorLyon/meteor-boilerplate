@@ -1,0 +1,12 @@
+{
+  "sitename": "meteor boilerplate - mobile app",
+  "email": {
+    "from": "Meteor Boilerplate <meteor@boilerplate.io>",
+    "signature": "Meteor Boilerplate !"
+  },
+  "config": {
+    "collections": {
+      "prefix": "boild"
+    }
+  }
+}

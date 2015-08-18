@@ -1,0 +1,56 @@
+# Meteor packages used by this project, one per line.
+# Check this file (and the other files in this directory) into your repository.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+#essentials
+meteor-platform
+
+#to be removed
+autopublish
+insecure
+
+#design
+raix:handlebar-helpers
+useraccounts:ionic
+meteoric:ionicons-sass
+meteoric:ionic-sass
+
+#login
+accounts-password
+accounts-facebook
+accounts-google
+accounts-twitter
+
+#advanced
+ground:db
+raix:eventemitter
+#less # i use sass with webstorm file watcher
+email
+http
+underscore
+reactive-dict
+
+#routing (flow-router or iron-router ? take care at the useraccounts deps)
+kadira:blaze-layout
+kadira:flow-router
+useraccounts:flow-routing
+
+#mobile
+fastclick
+#appcache
+#meteorhacks:fast-render
+#meteorhacks:subs-manager
+
+#monitoring
+meteorhacks:kadira
+okgrow:analytics
+tail:core
+
+#debug
+kadira:debug
+nrswolf:observatory
+astronomerio:core
+msavin:mongol
+meteortoys:toykit

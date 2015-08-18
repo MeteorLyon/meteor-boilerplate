@@ -1,0 +1,7 @@
+{
+  "config": {
+    "collections": {
+      "prefix": "test-boil"
+    }
+  }
+}

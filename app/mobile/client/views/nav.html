@@ -1,0 +1,18 @@
+<template name="nav">
+    <div class="navbar-fixe">
+        <nav>
+            <div class="nav-wrapper">
+                <a class="brand-logo" href="#">Meteor Boilerplate</a>
+
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li>{{> atNavButton }}</li>
+                </ul>
+
+                <ul class="side-nav" id="mobile-demo">
+                    <li>{{> atNavButton }}</li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</template>
