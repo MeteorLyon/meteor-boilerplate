@@ -45,16 +45,16 @@ routepolicy
 #webapp
 #webapp-hashing
 
-# specific app package
+# advanced
 underscore
 momentjs:moment
-rebolon:http-plugin-encoding
-rebolon:watcher-collections
-rebolon:watcher-common
-rebolon:watcher-providers
-rebolon:watcher-provider-leboncoin
-rebolon:worker-collections
-rebolon:worker-common
+meteorhacks:ssr
+email
+
+#specific
+ddv:common-collections
+ddv:common
+ddv:workers
 
 # should be in packages only
 #cfs:standard-packages
@@ -67,4 +67,3 @@ okgrow:analytics
 #debug
 kadira:debug
 nrswolf:observatory
-

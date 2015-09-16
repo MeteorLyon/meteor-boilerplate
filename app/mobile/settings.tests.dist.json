@@ -1,7 +1,9 @@
 {
-  "config": {
-    "collections": {
-      "prefix": "test-boil"
+  "public" {
+    "config": {
+      "collections": {
+        "prefix": "test-mbp"
+      }
     }
   }
 }

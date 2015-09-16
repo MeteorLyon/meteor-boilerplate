@@ -4,7 +4,7 @@
 AccountsTemplates.configure({
   defaultLayout: 'MainLayout',
   defaultLayoutRegions: {
-    "nav": "nav",
+    "header": "nav",
     "footer": "footer",
     "main": "main"
   },

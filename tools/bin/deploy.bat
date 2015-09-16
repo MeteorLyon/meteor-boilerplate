@@ -1,7 +1,5 @@
 @echo off
 
-@echo off
-
 IF [%NPM_PACKAGE_CONFIG_MONGOURL%] NEQ [] (
     echo "set mongourl" && (SET MONGO_URL=%NPM_PACKAGE_CONFIG_MONGOURL%)
 ) ELSE (
@@ -20,19 +18,16 @@ IF [%NPM_PACKAGE_CONFIG_ROOTURL%] NEQ [] (
     echo "No rooturl config found in package.json"
 )
 
-IF [%NPM_PACKAGE_CONFIG_PORT%] NEQ [] (
-    echo "set port" && (SET PORT=%NPM_PACKAGE_CONFIG_PORT%)
-) ELSE (
-    echo "No port config found in package.json"
-)
-
 IF [%NPM_PACKAGE_CONFIG_PACKAGEDIRS%] NEQ [] (
     echo "set packagedirs" && (SET PACKAGE_DIRS=%NPM_PACKAGE_CONFIG_PACKAGEDIRS%)
 ) ELSE (
     echo "No packagedirs config found in package.json"
 )
 
-IF [%NPM_PACKAGE_CONFIG_TESTSETTINGSFILE%] == [] echo "set a settings for test!" && exit /b 1
-IF [%NPM_PACKAGE_CONFIG_TESTPACKAGENAME%] == [] echo "set a package name to test!" && exit /b 1
+IF [%NPM_PACKAGE_CONFIG_DEPLOYSITENAME%] == [] echo "set a settings for test!" && exit /b 1
 
-meteor test-packages %NPM_PACKAGE_CONFIG_TESTPACKAGENAME% --settings %NPM_PACKAGE_CONFIG_TESTSETTINGSFILE% --port %PORT%
+IF [%NPM_PACKAGE_CONFIG_SETTINGSFILE%] NEQ [] (
+    meteor deploy %NPM_PACKAGE_CONFIG_DEPLOYSITENAME% --settings %NPM_PACKAGE_CONFIG_SETTINGSFILE%
+) ELSE (
+    meteor deploy NPM_PACKAGE_CONFIG_DEPLOYSITENAME%
+)

@@ -1,12 +1,29 @@
 {
-  "sitename": "meteor boilerplate - mobile app",
-  "email": {
-    "from": "Meteor Boilerplate <meteor@boilerplate.io>",
-    "signature": "Meteor Boilerplate !"
+  "sitename": "yourSiteName",
+  "emails": {
+    "contact": {
+      "from": "yourName <yourName@yourName.com>",
+      "signature": "Your mail signature"
+    }
   },
-  "config": {
-    "collections": {
-      "prefix": "boild"
+  "kadira": {
+    "appId": "",
+    "appSecret": ""
+  },
+  "public": {
+    "config": {
+      "collections": {
+        "prefix": "mbp"
+      }
+    },
+    "analyticsSettings": {
+
+    },
+    "astronomer": {
+      "appId": "XXXXXXXXXXXXXXXXXXX", // required
+      "disableUserTracking": true, // optional
+      "disableRouteTracking": true, // optional
+      "disableMethodTracking": true // optional
     }
   }
 }

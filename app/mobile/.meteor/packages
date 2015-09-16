@@ -5,7 +5,25 @@
 # but you can also edit it by hand.
 
 #essentials
-meteor-platform
+#meteor-base             # Packages every Meteor app needs to have
+#mobile-experience       # Packages for a great mobile UX
+#mongo                   # The database Meteor supports right now
+#blaze-html-templates    # Compile .html files into Meteor Blaze views
+#session                 # Client-side reactive dictionary for your app
+#jquery                  # Helpful client-side library
+#tracker                 # Meteor's client-side reactive programming library
+#standard-minifiers      # JS/CSS minifiers run for production mode
+#es5-shim                # ECMAScript 5 compatibility for older browsers.
+#ecmascript              # Enable ECMAScript2015+ syntax in app code
+meteor-platform          # for meteor <1.2
+
+#myessentials
+check
+templating                              # i thought it should be included by blaze-html-templates
+ui                                      # i thought it should be included by blaze-html-templates
+ddp
+blaze-tools                             # include underscore
+
 
 #to be removed
 autopublish
@@ -13,9 +31,8 @@ insecure
 
 #design
 raix:handlebar-helpers
-useraccounts:ionic
-meteoric:ionicons-sass
-meteoric:ionic-sass
+useraccounts:materialize
+#materialize:materialize                #finally i prefer to use /tools/sass/ for css (require to build css
 
 #login
 accounts-password
@@ -24,33 +41,51 @@ accounts-google
 accounts-twitter
 
 #advanced
-ground:db
 raix:eventemitter
-#less # i use sass with webstorm file watcher
+less                                    # i use sass with webstorm file watcher, but some packages still uses less
 email
 http
 underscore
 reactive-dict
+aldeed:template-extension               # allow template replace : for mdg:camera per example
+aldeed:simple-schema
+aldeed:autoform
+aldeed:collection2                      # to bind schema on collection
+gildaspk:autoform-materialize
+mxab:simple-schema-jsdoc                # for documentation
+#gildaspk:autoform-modals-materialize
+okland:camera-ui
+mdg:geolocation
+meteorhacks:ssr
+meteorhacks:picker
 
 #routing (flow-router or iron-router ? take care at the useraccounts deps)
 kadira:blaze-layout
 kadira:flow-router
 useraccounts:flow-routing
+arillo:flow-router-helpers
+zimme:active-route
 
 #mobile
+mdg:reload-on-resume
 fastclick
-#appcache
-#meteorhacks:fast-render
-#meteorhacks:subs-manager
+appcache                               #disabled until production
+meteorhacks:fast-render
+meteorhacks:subs-manager
 
 #monitoring
 meteorhacks:kadira
+meteorhacks:zones
 okgrow:analytics
-tail:core
+#tail:core                              #it can generates error with mdg:camera Uncaught Error: Must be attached
 
 #debug
 kadira:debug
 nrswolf:observatory
-astronomerio:core
+#astronomerio:core                      # fail with meteor 1.2 RC
 msavin:mongol
 meteortoys:toykit
+
+#specific
+ddv:common
+ddv:common-collections

@@ -1,7 +1,16 @@
 {
-  "config": {
-    "collections": {
-      "prefix": "test-boil"
+  "tests": {
+    "root" : "/pathToYourProjectRoot",
+    "tmp" : "/tmp/",
+    "files": {
+    }
+  },
+
+  "public": {
+    "config": {
+      "collections": {
+        "prefix": "test-mbp"
+      }
     }
   }
 }

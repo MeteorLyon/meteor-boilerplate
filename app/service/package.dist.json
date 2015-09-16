@@ -1,20 +1,23 @@
 {
-  "name": "rebolon-meteor-boilerplate-service-app",
+  "name": "server-only",
   "author": "Benjamin RICHARD <richard.tribes@gmail.com>",
   "version": "1.0.0",
   "licence": "Proprietary",
   "config": {
-    "rooturl": "http://localhost",
+    "rooturl": "",
     "mongourl": "",
     "mailurl": "",
     "port": "3000",
-    "packagedirs": "",
+    "packagedirs": "../../packages",
     "settingsfile": "settings.dist.json",
     "testsettingsfile": "settings.tests.dist.json",
-    "testpackagename": ""
+    "testpackagename": "",
+    "deploysitename": ""
   },
   "scripts": {
     "start": "../../tools/bin/start.sh",
-    "test": "../../tools/bin/start.sh"
+    "test": "../../tools/bin/test.sh",
+    "update": "../../tools/bin/update.sh",
+    "deploy": "../../tools/bin/deploy.sh"
   }
 }

@@ -1,1 +1,1 @@
-use iron-cli (with linux) to manage collection (and user ?) here and other features
+use orionjs to manage admin of the app

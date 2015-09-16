@@ -59,7 +59,7 @@ Test a package with :
     open your browser to the required url (localhost:3000)
     
 ##Deployment
-For demos and beta : meteor deploy aName
+For demos and beta : set a deploy name in the package.js and run npm run-script deploy command.
 
 For production, passenger phusion, npm mup package or just meteor build command and do it your self.
 
@@ -71,6 +71,7 @@ Follow security requirements :
 * http://joshowens.me/meteor-security-101/ 
 * http://joshowens.me/meteor-security-201/
 * summary of 3 previous : https://meteorjs.club/MeteorSecurityChecklist.pdf?__s=ysuohrq1qzqkx56usqfm
+* http://blog.east5th.co/2015/08/31/incomplete-argument-checks/
 
 ##TODO
 

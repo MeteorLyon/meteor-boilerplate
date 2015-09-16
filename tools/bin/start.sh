@@ -6,4 +6,4 @@ if [ -z "$npm_package_config_rooturl" ]; then echo "No rooturl config found in p
 if [ -z "$npm_package_config_port" ]; then echo "No port config found in package.json"; else echo "set port" && export PORT=$npm_package_config_port; fi
 if [ -z "$npm_package_config_packagedirs" ]; then echo "No packagedirs config found in package.json"; else echo "set packagedirs" && export PACKAGE_DIRS=$npm_package_config_packagedirs; fi
 
-if [ -z "$npm_package_config_settingsfile" ]; then meteor; else meteor --settings $npm_package_config_settingsfile; fi
+if [ -z "$npm_package_config_settingsfile" ]; then meteor --port $PORT; else meteor --settings $npm_package_config_settingsfile --port $PORT; fi

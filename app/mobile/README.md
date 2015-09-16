@@ -3,6 +3,21 @@
 ##Introduction
 
 A simple Boilerplate with all required packages for devlopment
+Web applications are splitted in app folder. There is one per aim : mobile only, desktop, admin only, service for
+server only
+All packages are in packages folder
+We use sass for MaterializeCss or Fezvrata material and sources files are in tools folder
+Usually you should store all pre-processed files in tools and use your prefered workflow to transpile your files into
+the correct folder. You might also use meteor package for preprocess : less, fourseven:scss, ... it's up to you to 
+choose.
+
+MaterializeCSS:
+ * font are copyed into app/project/public/font
+ * css are generated from preprocessing tools into app/project/client/css
+ * js are copyed into app/project/client/common
+ 
+Fezvrata:
+@TODO finish
 
 ##Installation
 
@@ -44,7 +59,7 @@ Test a package with :
     open your browser to the required url (localhost:3000)
     
 ##Deployment
-For demos and beta : meteor deploy aName
+For demos and beta : set a deploy name in the package.js and run npm run-script deploy command.
 
 For production, passenger phusion, npm mup package or just meteor build command and do it your self.
 
@@ -56,6 +71,7 @@ Follow security requirements :
 * http://joshowens.me/meteor-security-101/ 
 * http://joshowens.me/meteor-security-201/
 * summary of 3 previous : https://meteorjs.club/MeteorSecurityChecklist.pdf?__s=ysuohrq1qzqkx56usqfm
+* http://blog.east5th.co/2015/08/31/incomplete-argument-checks/
 
 ##TODO
 

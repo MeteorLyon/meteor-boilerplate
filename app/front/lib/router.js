@@ -13,7 +13,7 @@ FlowRouter.notFound = {
         BlazeLayout.render('MainLayout', {
             footer: "footer",
             main: "pageNotFound",
-            nav: "nav"
+            header: "nav"
         });
     }
 };
@@ -25,7 +25,7 @@ FlowRouter.route('/', {
     },
     action: function(params) {
         BlazeLayout.render('MainLayout', {
-            nav: "nav",
+            header: "nav",
             main: "main",
             footer: "footer"
         });
