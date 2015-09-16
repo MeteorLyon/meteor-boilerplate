@@ -4,7 +4,7 @@
 # 'meteor add' and 'meteor remove' will edit this file for you,
 # but you can also edit it by hand.
 
-#essentials
+#essentials for METEOR@1.2-rc.12
 #meteor-base             # Packages every Meteor app needs to have
 #mobile-experience       # Packages for a great mobile UX
 #mongo                   # The database Meteor supports right now
@@ -15,24 +15,22 @@
 #standard-minifiers      # JS/CSS minifiers run for production mode
 #es5-shim                # ECMAScript 5 compatibility for older browsers.
 #ecmascript              # Enable ECMAScript2015+ syntax in app code
-meteor-platform          # for meteor <1.2
 
-#myessentials
-check
-templating                              # i thought it should be included by blaze-html-templates
-ui                                      # i thought it should be included by blaze-html-templates
-ddp
-blaze-tools                             # include underscore
-
+#myessentials for METEOR@1.2-rc.12
+#check
+#templating                              # i thought it should be included by blaze-html-templates
+#ui                                      # i thought it should be included by blaze-html-templates
+#ddp
+#blaze-tools                             # include underscore
 
 #to be removed
 autopublish
 insecure
 
 #design
-raix:handlebar-helpers
-useraccounts:materialize
-#materialize:materialize                #finally i prefer to use /tools/sass/ for css (require to build css
+raix:handlebar-helpers                  # new helpers for templating
+useraccounts:materialize                # useraccounts with the materializecss design
+#materialize:materialize                #finally i prefer to use /tools/sass/ for css
 
 #login
 accounts-password
@@ -48,18 +46,18 @@ http
 underscore
 reactive-dict
 aldeed:template-extension               # allow template replace : for mdg:camera per example
-aldeed:simple-schema
-aldeed:autoform
+aldeed:simple-schema                    # build schema that represent your data and validate input throught check package
+aldeed:autoform                         # quickly build form from collection or schema
 aldeed:collection2                      # to bind schema on collection
-gildaspk:autoform-materialize
+gildaspk:autoform-materialize           # materializecss design for autoform
 mxab:simple-schema-jsdoc                # for documentation
 #gildaspk:autoform-modals-materialize
-okland:camera-ui
+okland:camera-ui                        # overload mdg:camera
 mdg:geolocation
-meteorhacks:ssr
-meteorhacks:picker
+meteorhacks:ssr                         # server side rendering
 
 #routing (flow-router or iron-router ? take care at the useraccounts deps)
+meteorhacks:picker                      # server side routing
 kadira:blaze-layout
 kadira:flow-router
 useraccounts:flow-routing
@@ -87,5 +85,3 @@ msavin:mongol
 meteortoys:toykit
 
 #specific
-ddv:common
-ddv:common-collections

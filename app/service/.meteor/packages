@@ -45,25 +45,33 @@ routepolicy
 #webapp
 #webapp-hashing
 
+#to be removed
+autopublish
+insecure
+
 # advanced
-underscore
-momentjs:moment
-meteorhacks:ssr
+raix:eventemitter
 email
+http
+underscore
+reactive-dict
+aldeed:simple-schema                    # build schema that represent your data and validate input throught check package
+aldeed:collection2                      # to bind schema on collection
+mxab:simple-schema-jsdoc                # for documentation
+meteorhacks:ssr                         # server side rendering
+#cfs:standard-packages                  # should be in packages only
+#cfs:gridfs                             # should be in packages only
 
-#specific
-ddv:common-collections
-ddv:common
-ddv:workers
-
-# should be in packages only
-#cfs:standard-packages
-#cfs:gridfs
+#routing (flow-router or iron-router ? take care at the useraccounts deps)
+meteorhacks:picker                      # server side routing
 
 #monitoring
 meteorhacks:kadira
+meteorhacks:zones
 okgrow:analytics
 
 #debug
 kadira:debug
 nrswolf:observatory
+
+#specific
