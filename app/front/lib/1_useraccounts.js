@@ -4,11 +4,11 @@
 AccountsTemplates.configure({
   defaultLayout: 'MainLayout',
   defaultLayoutRegions: {
-    "header": "nav",
-    "footer": "footer",
-    "main": "main"
+    "topZone": "nav",
+    "bottomZone": "footer",
+    "mainZone": "main"
   },
-  defaultContentRegion: 'main',
+  defaultContentRegion: 'mainZone',
   showForgotPasswordLink: true,
   overrideLoginErrors: true,
   enablePasswordChange: true,
@@ -34,8 +34,6 @@ AccountsTemplates.configure({
   //termsUrl: 'terms-of-use',
 });
 
-Meteor.startup(function userAccountsConfig() {
-});
 /**
  * Accounts configuration (is it overloaded by UserAccounts ?
  */

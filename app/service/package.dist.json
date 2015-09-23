@@ -7,7 +7,7 @@
     "rooturl": "",
     "mongourl": "",
     "mailurl": "",
-    "port": "3000",
+    "port": "3008",
     "packagedirs": "../../packages",
     "settingsfile": "settings.dist.json",
     "testsettingsfile": "settings.tests.dist.json",

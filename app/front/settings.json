@@ -20,10 +20,6 @@
 
     },
     "astronomer": {
-      "appId": "XXXXXXXXXXXXXXXXXXX", 
-      "disableUserTracking": true, 
-      "disableRouteTracking": true, 
-      "disableMethodTracking": true 
     }
   }
 }

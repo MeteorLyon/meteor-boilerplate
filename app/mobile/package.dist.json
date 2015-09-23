@@ -1,5 +1,5 @@
 {
-  "name": "webapp-mobile-android",
+  "name": "webapp-mobile",
   "author": "Benjamin RICHARD <richard.tribes@gmail.com>",
   "version": "1.0.0",
   "licence": "Proprietary",
@@ -7,7 +7,7 @@
     "rooturl": "",
     "mongourl": "",
     "mailurl": "",
-    "port": "3006",
+    "port": "3002",
     "packagedirs": "../../packages/",
     "settingsfile": "settings.dist.json",
     "testsettingsfile": "settings.tests.dist.json",

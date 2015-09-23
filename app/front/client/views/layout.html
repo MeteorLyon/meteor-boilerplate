@@ -1,16 +1,14 @@
 <template name="MainLayout">
     <header>
-        {{> Template.dynamic template=header}}
+        {{> Template.dynamic template=topZone}}
     </header>
 
     <main>
-        <div>
-            {{> Template.dynamic template=main}}
-        </div>
+        {{> Template.dynamic template=mainZone}}
     </main>
 
     <footer class="page-footer">
-        {{> Template.dynamic template=footer}}
+        {{> Template.dynamic template=bottomZone}}
     </footer>
 
 </template>

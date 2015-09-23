@@ -11,9 +11,9 @@ AccountsTemplates.configureRoute('signUp', {
 FlowRouter.notFound = {
     action: function() {
         BlazeLayout.render('MainLayout', {
-            footer: "footer",
-            main: "pageNotFound",
-            header: "nav"
+            bottomZone: "footer",
+            mainZone: "pageNotFound",
+            topZone: "nav"
         });
     }
 };
@@ -25,40 +25,13 @@ FlowRouter.route('/', {
     },
     action: function(params) {
         BlazeLayout.render('MainLayout', {
-            header: "nav",
-            main: "main",
-            footer: "footer"
-        });
-    }
-});
-/*
-FlowRouter.route('/privacy', {
-    name: 'Privacy',
-    subscriptions: function(params, queryParams) {
-
-    },
-    action: function(params) {
-        BlazeLayout.render('MainLayout', {
-            nav: "nav",
-            main: "main",
-            footer: "footer"
+            topZone: "nav",
+            mainZone: "main",
+            bottomZone: "footer"
         });
     }
 });
 
-FlowRouter.route('/terms-of-use', {
-    subscriptions: function(params, queryParams) {
-
-    },
-    action: function(params) {
-        BlazeLayout.render('MainLayout', {
-            nav: "nav",
-            main: "main",
-            footer: "footer"
-        });
-    },
-    name: 'Terms of use'
-});
 /* all private route must use triggersEnter */
 /*FlowRouter.route('/private', {
     triggersEnter: [AccountsTemplates.ensureSignedIn],
