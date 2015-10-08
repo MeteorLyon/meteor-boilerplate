@@ -67,6 +67,7 @@ For production, passenger phusion, npm mup package or just meteor build command 
 
 Follow security requirements : 
 
+* http://dweldon.silvrback.com/common-mistakes
 * http://joshowens.me/the-curious-case-of-the-unknowing-leaky-meteor-security/
 * http://joshowens.me/meteor-security-101/ 
 * http://joshowens.me/meteor-security-201/
