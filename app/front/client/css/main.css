@@ -14,3 +14,13 @@ footer.page-footer {
   position: absolute;
   bottom: 0px;
 }
+
+header nav .nav-wrapper {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+#at-nav-button {
+    margin-left: 10px;
+    margin-right: 10px;
+}
