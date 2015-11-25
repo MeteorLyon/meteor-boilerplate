@@ -6,7 +6,7 @@ if [ -z "$npm_package_config_rooturl" ]; then echo "No rooturl config found in p
 if [ -z "$npm_package_config_packagedirs" ]; then echo "No packagedirs config found in package.json"; else echo "set packagedirs" && export PACKAGE_DIRS=$npm_package_config_packagedirs; fi
 
 if [ -z "$npm_package_config_deploysitename" ]; then (
-    echo "set a deploy siteame before deploy!"
+    echo "set a deploy sitename before deploy!"
     exit 1
 ) fi
 

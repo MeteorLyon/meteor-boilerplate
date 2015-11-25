@@ -24,7 +24,7 @@ IF [%NPM_PACKAGE_CONFIG_PACKAGEDIRS%] NEQ [] (
     echo "No packagedirs config found in package.json"
 )
 
-IF [%NPM_PACKAGE_CONFIG_DEPLOYSITENAME%] == [] echo "set a settings for test!" && exit /b 1
+IF [%NPM_PACKAGE_CONFIG_DEPLOYSITENAME%] == [] echo "set a deploy sitename before deploy!" && exit /b 1
 
 IF [%NPM_PACKAGE_CONFIG_SETTINGSFILE%] NEQ [] (
     meteor deploy %NPM_PACKAGE_CONFIG_DEPLOYSITENAME% --settings %NPM_PACKAGE_CONFIG_SETTINGSFILE%
