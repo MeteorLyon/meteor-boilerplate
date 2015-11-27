@@ -14,13 +14,16 @@
     "testpackagename": "",
     "deploysitename": "",
     "buildfolder": "",
-    "mobileserver": "../../build/mobile/"
+    "mobileserver": "../../build/mobile/",
+    "javakeystore": "",
+    "javakeystorealiasname": ""
   },
   "scripts": {
     "start": "../../tools/bin/start.sh",
     "test": "../../tools/bin/test.sh",
     "update": "../../tools/bin/update.sh",
     "deploy": "../../tools/bin/deploy.sh",
-    "build": "../../tools/bin/build.sh"
+    "build": "../../tools/bin/build.sh",
+    "sign-apk": "../../tools/bin/sign-apk.sh"
   }
 }
