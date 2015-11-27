@@ -12,7 +12,8 @@
     "settingsfile": "settings.dist.json",
     "testsettingsfile": "settings.tests.dist.json",
     "testpackagename": "",
-    "deploysitename": ""
+    "deploysitename": "",
+    "buildfolder": "../../build/front/"
   },
   "scripts": {
     "start": "../../tools/bin/start.sh",

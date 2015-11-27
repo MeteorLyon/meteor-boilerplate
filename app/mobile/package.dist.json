@@ -14,7 +14,7 @@
     "testpackagename": "",
     "deploysitename": "",
     "buildfolder": "",
-    "mobileserver": ""
+    "mobileserver": "../../build/mobile/"
   },
   "scripts": {
     "start": "../../tools/bin/start.sh",
