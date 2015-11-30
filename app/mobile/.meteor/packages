@@ -33,6 +33,8 @@ insecure
 raix:handlebar-helpers                  # new helpers for templating
 useraccounts:materialize                # useraccounts with the materializecss design
 #materialize:materialize                #finally i prefer to use /tools/sass/ for css
+service-configuration                   #to allow social login with useraccounts:core
+accounts-ui                             #same as previous
 
 #login
 accounts-password
