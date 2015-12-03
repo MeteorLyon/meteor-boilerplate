@@ -15,4 +15,4 @@ if [ -z "$npm_package_config_javakeystorealiasname" ]; then (
     exit 1
 ) fi
 
-jarsigner -sigalg SHA1withRSA -digestalg SHA1 -keystore $npm_package_config_javakeystore $npm_package_config_buildfolder/release-unaligned.apk $npm_package_config_javakeystorealiasname
+jarsigner -sigalg SHA1withRSA -digestalg SHA1 -keystore $npm_package_config_javakeystore $npm_package_config_buildfolder/android/release-unsigned.apk $npm_package_config_javakeystorealiasname

@@ -13,8 +13,8 @@
     "testsettingsfile": "settings.tests.dist.json",
     "testpackagename": "",
     "deploysitename": "",
-    "buildfolder": "",
-    "mobileserver": "../../build/mobile/",
+    "buildfolder": "../../build/mobile/",
+    "mobileserver": "",
     "javakeystore": "",
     "javakeystorealiasname": ""
   },
