@@ -9,12 +9,12 @@ if [ -z "$npm_package_config_packagedirs" ]; then echo "No packagedirs config fo
 if [ -z "$npm_package_config_testsettingsfile" ]; then (
     echo "set a settings for test!"
     exit 1
-) fi
+); fi
 
 if [ -z "$npm_package_config_testpackagename" ]; then (
     echo "set a package name to test!"
     exit 1
-) fi
+); fi
 
 export METEOR_SETTINGS=$npm_package_config_testsettingsfile
 
