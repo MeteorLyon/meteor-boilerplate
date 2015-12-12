@@ -7,4 +7,4 @@ if [ -z "$npm_package_config_port" ]; then echo "No port config found in package
 if [ -z "$npm_package_config_packagedirs" ]; then echo "No packagedirs config found in package.json"; else echo "set packagedirs" && export PACKAGE_DIRS=$npm_package_config_packagedirs; fi
 if [ -z "$npm_package_config_settingsfile" ]; then echo "No settings file found in package.json" && export REBOLON_SETTINGS=""; else echo "set settings" && export REBOLON_SETTINGS="--settings $npm_package_config_settingsfile"; fi
 
-meteor --port $PORT $REBOLON_SETTINGS $*;
+meteor $REBOLON_SETTINGS --port $PORT $*;

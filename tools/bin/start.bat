@@ -31,9 +31,9 @@ IF [%NPM_PACKAGE_CONFIG_PACKAGEDIRS%] NEQ [] (
 )
 
 IF [%NPM_PACKAGE_CONFIG_SETTINGSFILE%] NEQ [] (
-    echo "set settings" && (SET REBOLON_SETTINGS="--settings "%NPM_PACKAGE_CONFIG_SETTINGSFILE%)
+    echo "set settings" && (SET REBOLON_SETTINGS=--settings %NPM_PACKAGE_CONFIG_SETTINGSFILE%)
 ) ELSE (
     echo "No settings found in package.json" && (SET REBOLON_SETTINGS="")
 )
 
-meteor --settings %NPM_PACKAGE_CONFIG_SETTINGSFILE% %REBOLON_SETTINGS --port %PORT% %*
+meteor %REBOLON_SETTINGS --port %PORT% %*
