@@ -6,3 +6,4 @@ passenger.*.log
 build/android
 build/*.tar.gz
 *.keystore
+**/npm-debug.log
