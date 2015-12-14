@@ -36,4 +36,6 @@ IF [%NPM_PACKAGE_CONFIG_SETTINGSFILE%] NEQ [] (
     echo "No settings found in package.json" && (SET REBOLON_SETTINGS="")
 )
 
-meteor %REBOLON_SETTINGS --port %PORT% %*
+echo "meteor %REBOLON_SETTINGS% --port %PORT% %*"
+
+meteor %REBOLON_SETTINGS% --port %PORT% %*
