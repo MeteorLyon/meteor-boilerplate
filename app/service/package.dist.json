@@ -18,6 +18,7 @@
   "scripts": {
     "start": "../../tools/bin/start.sh",
     "start-passenger": "../../tools/bin/start-passenger.sh",
+    "debug": "../../tools/bin/debug.sh",
     "test": "../../tools/bin/test.sh",
     "update": "../../tools/bin/update.sh",
     "deploy": "../../tools/bin/deploy.sh",
