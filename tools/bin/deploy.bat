@@ -1,11 +1,5 @@
 @echo off
 
-IF [%NPM_PACKAGE_CONFIG_MONGOURL%] NEQ [] (
-    echo "set mongourl" && (SET MONGO_URL=%NPM_PACKAGE_CONFIG_MONGOURL%)
-) ELSE (
-    echo "No mongourl config found in package.json"
-)
-
 IF [%NPM_PACKAGE_CONFIG_MAILURL%] NEQ [] (
     echo "set mailurl" && (SET MAIL_URL=%NPM_PACKAGE_CONFIG_MAILURL%)
 ) ELSE (
