@@ -6,6 +6,7 @@
   "config": {
     "rooturl": "",
     "mongourl": "",
+    "mongooplogurl": "",
     "mailurl": "",
     "port": "3008",
     "packagedirs": "../../packages",
