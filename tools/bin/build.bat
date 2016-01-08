@@ -31,7 +31,7 @@ IF [%NPM_PACKAGE_CONFIG_PACKAGEDIRS%] NEQ [] (
 )
 
 IF [%NPM_PACKAGE_CONFIG_MOBILESERVER%] NEQ [] (
-    echo "set mobile server" && (SET REBOLON_MOBILE_SERVER=%NPM_PACKAGE_CONFIG_MOBILESERVER%)
+    echo "set mobile server" && (SET REBOLON_MOBILE_SERVER=" --server=%NPM_PACKAGE_CONFIG_MOBILESERVER%")
 ) ELSE (
     echo "No mobile server config found in package.json (mobile app offline)" && (SET REBOLON_MOBILE_SERVER="")
 )
@@ -42,6 +42,6 @@ IF [%NPM_PACKAGE_CONFIG_SETTINGSFILE%] NEQ [] (
     echo "No settings found in package.json" && (SET REBOLON_SETTINGS="")
 )
 
-IF [%NPM_PACKAGE_CONFIG_BUILDFOLDER%] NEQ [] echo "a build folder before running the build system!" && exit /b 1
+IF [%NPM_PACKAGE_CONFIG_BUILDFOLDER%] == [] echo "a build folder before running the build system!" && exit /b 1
 
 meteor build %NPM_PACKAGE_CONFIG_BUILDFOLDER% %REBOLON_MOBILE_SERVER% %REBOLON_SETTINGS% %*
