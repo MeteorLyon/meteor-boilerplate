@@ -87,3 +87,6 @@ msavin:mongol
 meteortoys:toykit
 
 #specific
+rebolon:npm-libraries
+rebolon:common-registration
+rebolon:common-router

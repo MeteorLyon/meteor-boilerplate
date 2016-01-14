@@ -1,0 +1,17 @@
+<template name="rebolon_registration_terms">
+<h3 class="center">Terms</h3>
+<div class="sectionTerms">
+    <div>
+        <p>
+            Copy your terms here.
+        </p>
+    </div>
+</div>
+<div>
+    {{#if termsAccepted}}
+        <h4 class="center">You have accepted terms on {{termsAccepted}}</h4>
+    {{else}}
+        <button data-action="accept-terms" class="btn waves-effect waves-light">I accept terms</button>
+    {{/if}}
+</div>
+</template>
