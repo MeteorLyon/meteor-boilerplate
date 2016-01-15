@@ -36,10 +36,16 @@ IF [%NPM_PACKAGE_CONFIG_PACKAGEDIRS%] NEQ [] (
     echo "No packagedirs config found in package.json"
 )
 
+IF [%NPM_PACKAGE_CONFIG_MOBILESERVER%] NEQ [] (
+    echo "set mobile server" && (SET REBOLON_MOBILE_SERVER=--mobile-server %NPM_PACKAGE_CONFIG_MOBILESERVER%)
+) ELSE (
+    echo "No mobile server config found in package.json (mobile app offline)" && (SET REBOLON_MOBILE_SERVER= )
+)
+
 IF [%NPM_PACKAGE_CONFIG_SETTINGSFILE%] NEQ [] (
     echo "set settings" && (SET REBOLON_SETTINGS=--settings %NPM_PACKAGE_CONFIG_SETTINGSFILE%)
 ) ELSE (
-    echo "No settings found in package.json" && (SET REBOLON_SETTINGS="")
+    echo "No settings found in package.json" && (SET REBOLON_SETTINGS= )
 )
 
-meteor debug %REBOLON_SETTINGS% --port %PORT% %*
+meteor debug %REBOLON_SETTINGS%  %REBOLON_MOBILE_SERVER% --port %PORT% %*
