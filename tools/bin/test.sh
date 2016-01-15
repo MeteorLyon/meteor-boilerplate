@@ -18,4 +18,5 @@ if [ -z "$npm_package_config_testpackagename" ]; then (
 
 export METEOR_SETTINGS=$npm_package_config_testsettingsfile
 
+printf "meteor test-packages $npm_package_config_testpackagename --port $PORT";
 meteor test-packages $npm_package_config_testpackagename --port $PORT

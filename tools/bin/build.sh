@@ -13,4 +13,5 @@ if [ -z "$npm_package_config_buildfolder" ]; then (
     exit 1
 ); fi
 
+printf "meteor build $npm_package_config_buildfolder $REBOLON_SETTINGS $REBOLON_MOBILE_SERVER $*";
 meteor build $npm_package_config_buildfolder $REBOLON_SETTINGS $REBOLON_MOBILE_SERVER $*;

@@ -10,4 +10,5 @@ if [ -z "$npm_package_config_deploysitename" ]; then (
     exit 1
 ); fi
 
+printf "meteor deploy $npm_package_config_deploysitename $REBOLON_SETTINGS";
 meteor deploy $npm_package_config_deploysitename $REBOLON_SETTINGS;

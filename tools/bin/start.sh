@@ -9,4 +9,5 @@ if [ -z "$npm_package_config_packagedirs" ]; then echo "No packagedirs config fo
 if [ -z "$npm_package_config_mobileserver" ]; then echo "No mobile server config found in package.json (mobile app offline)" && export REBOLON_MOBILE_SERVER=""; else echo "set mobile server" && export REBOLON_MOBILE_SERVER=" --mobile-server=$npm_package_config_mobileserver"; fi
 if [ -z "$npm_package_config_settingsfile" ]; then echo "No settings file found in package.json" && export REBOLON_SETTINGS=""; else echo "set settings" && export METEOR_SETTINGS=$(cat $npm_package_config_settingsfile) && export REBOLON_SETTINGS="--settings $npm_package_config_settingsfile"; fi
 
+printf "meteor $REBOLON_SETTINGS $REBOLON_MOBILE_SERVER --port $PORT $*";
 meteor $REBOLON_SETTINGS $REBOLON_MOBILE_SERVER --port $PORT $*;

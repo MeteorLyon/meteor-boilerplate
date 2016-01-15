@@ -35,4 +35,5 @@ IF [%NPM_PACKAGE_CONFIG_PACKAGEDIRS%] NEQ [] (
 IF [%NPM_PACKAGE_CONFIG_TESTSETTINGSFILE%] == [] echo "set a settings for test!" && exit /b 1
 IF [%NPM_PACKAGE_CONFIG_TESTPACKAGENAME%] == [] echo "set a package name to test!" && exit /b 1
 
+printf "meteor test-packages %NPM_PACKAGE_CONFIG_TESTPACKAGENAME% --settings %NPM_PACKAGE_CONFIG_TESTSETTINGSFILE% --port %PORT%";
 meteor test-packages %NPM_PACKAGE_CONFIG_TESTPACKAGENAME% --settings %NPM_PACKAGE_CONFIG_TESTSETTINGSFILE% --port %PORT%

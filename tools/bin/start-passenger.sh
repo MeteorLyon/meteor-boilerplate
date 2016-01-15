@@ -12,4 +12,5 @@ if [ -z "$npm_package_config_mobileserver" ]; then echo "No mobile server config
 if [ -z "$npm_package_config_settingsfile" ]; then echo "No settings file found in package.json" && export REBOLON_SETTINGS=""; else echo "set settings" && export METEOR_SETTINGS=$(cat $npm_package_config_settingsfile) && export REBOLON_SETTINGS="--meteor-app-settings $npm_package_config_settingsfile"; fi
 if [ -z "$npm_package_config_sudouser" ]; then echo "No sudo user found in package.json, add config key sudouser if you need it" && export REBOLON_SUDOUSER=""; else echo "set sudo user" && export REBOLON_SUDOUSER="--user $npm_package_config_sudouser"; fi
 
+printf "sudo -E passenger start $REBOLON_SETTINGS $REBOLON_MOBILE_SERVER --port $PORT $npm_package_config_sudouser --environment production --daemonize --sticky-sessions;";
 sudo -E passenger start $REBOLON_SETTINGS $REBOLON_MOBILE_SERVER --port $PORT $npm_package_config_sudouser --environment production --daemonize --sticky-sessions;

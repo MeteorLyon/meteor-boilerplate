@@ -6,4 +6,5 @@ IF [%NPM_PACKAGE_CONFIG_PACKAGEDIRS%] NEQ [] (
     echo "No packagedirs config found in package.json"
 )
 
+printf "meteor update %*"
 meteor update %*
