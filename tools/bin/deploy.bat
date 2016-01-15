@@ -25,7 +25,7 @@ IF [%NPM_PACKAGE_CONFIG_MOBILESERVER%] NEQ [] (
 )
 
 IF [%NPM_PACKAGE_CONFIG_SETTINGSFILE%] NEQ [] (
-    echo "set settings" && (SET REBOLON_SETTINGS="--settings "%NPM_PACKAGE_CONFIG_SETTINGSFILE%)
+    echo "set settings" && (SET REBOLON_SETTINGS=--settings %NPM_PACKAGE_CONFIG_SETTINGSFILE%)
 ) ELSE (
     echo "No settings found in package.json" && (SET REBOLON_SETTINGS= )
 )
