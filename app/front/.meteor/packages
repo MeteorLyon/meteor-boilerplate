@@ -57,6 +57,8 @@ mxab:simple-schema-jsdoc                # for documentation
 okland:camera-ui                        # overload mdg:camera
 mdg:geolocation
 meteorhacks:ssr                         # server side rendering
+ground:db                               # offline
+themeteorchef:bert                      # client notifications
 
 #routing (flow-router or iron-router ? take care at the useraccounts deps)
 meteorhacks:picker                      # server side routing
