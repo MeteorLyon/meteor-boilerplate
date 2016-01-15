@@ -2,7 +2,7 @@
 
 ##Introduction
 
-A simple Boilerplate with all required packages for devlopment
+A simple Boilerplate with all required packages for development
 Web applications are splitted in app folder. There is one per aim : mobile only, desktop, admin only, service for
 server only
 All packages are in packages folder
@@ -13,7 +13,7 @@ choose.
 
 MaterializeCSS:
  * font are copyed into app/project/public/font
- * css are generated from preprocessing tools into app/project/client/css
+ * css are generated from preprocessing tools into app/project/public/css
  * js are copyed into app/project/client/common
  
 Fezvrata:
@@ -58,6 +58,14 @@ Test a package with :
     npm test
     open your browser to the required url (localhost:3000)
     
+If you need to load fixtures in your test you can store those fixtures in : tools/tests or in packages/yourPackage/fixtures/
+Then you have to add them in the settings.tests.json in the tests.files node.
+Then just load them like this in your test :
+
+    var fs = Npm.require('fs'),
+        fixtures = fs.readFileSync(Meteor.settings.tests.root + Meteor.settings.tests.files.yourNode).toString();
+          
+    
 ##Deployment
 For demos and beta : set a deploy name in the package.js and run npm run-script deploy command.
 
@@ -67,7 +75,6 @@ For production, passenger phusion, npm mup package or just meteor build command 
 
 Follow security requirements : 
 
-* http://dweldon.silvrback.com/common-mistakes
 * http://joshowens.me/the-curious-case-of-the-unknowing-leaky-meteor-security/
 * http://joshowens.me/meteor-security-101/ 
 * http://joshowens.me/meteor-security-201/

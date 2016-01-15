@@ -1,4 +1,12 @@
 {
+  "tests": {
+    "root" : "/pathToYourProject",
+    "tmp" : "/tmp/",
+    "files": {
+      "oneFixtureToBLoaded": "/pathToTheFixturesFile.extension"
+    }
+  },
+
   "public": {
     "config": {
       "collections": {
