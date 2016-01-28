@@ -70,10 +70,16 @@ zimme:active-route
 
 #mobile
 mdg:reload-on-resume
+mobile-status-bar                       # to allow remove of statusbar on webview
+launch-screen                           # avoid blank page between splashscreen and real app start
 fastclick
-appcache                               #disabled until production
+appcache                                #disabled until production
+crosswalk                               #to improve android perf
+#silvervue:wkwebview                     #to improve IOS 8+ perf
+percolate:safe-reload                   #to recover after a failing hot code push, TAKE CARE TO COMMENT THE ROW IF WKWEBVIEW IS UNCOMMENTED, ISSUE OPENED
 meteorhacks:fast-render
 meteorhacks:subs-manager
+mycode:ismobile
 
 #monitoring
 meteorhacks:kadira

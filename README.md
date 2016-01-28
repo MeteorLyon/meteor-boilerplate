@@ -32,7 +32,7 @@ Copy the package.dist.json into package.json
     edit package.json with your informations
         rooturl: Meteor root_url
         mongourl: Meteor mongo_url
-        mailurl: Meteor mail_url
+        mailurl: Meteor mail_url // TAKE CARE TO urlencode the email, ex. on MailGun: smtp://postmaster%40sandbox123123ze&23123.mailgun.org:yourPasswordHere@smtp.mailgun.org:587
         port: Meteor port
         packagedirs: Meteor package_dirs
         settingsfile: Meteor settings file

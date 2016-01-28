@@ -7,7 +7,7 @@
     "rooturl": "http://localhost",
     "mongourl": "",
     "mongooplogurl": "",
-    "mailurl": "",
+    "mailurl": "smtp://yourEmailUrlEncodedWith%40insteadOf@:yourPassword@smtp.mailgun.org:587",
     "port": "3008",
     "packagedirs": "../../packages",
     "settingsfile": "settings.json",
